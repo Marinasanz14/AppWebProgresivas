@@ -1,5 +1,6 @@
 
 
+
 var request = new XMLHttpRequest();
 
 
@@ -12,6 +13,6 @@ request.onreadystatechange = function( state ) {
         var resp = request.response;
         var respObj = JSON.parse( resp);
 
-        console.log(resp.page);
+        console.log(respObj.page);
     }
 }
